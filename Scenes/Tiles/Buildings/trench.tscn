@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bhul8hblhg4op" path="res://Scenes/Tiles/tile.tscn" id="1_vrnmd"]
 [ext_resource type="Texture2D" uid="uid://ce3b0un8i6tuk" path="res://Sprites/Trench.png" id="2_7ruy6"]
 
-[node name="Tile" instance=ExtResource("1_vrnmd")]
+[node name="Trench" instance=ExtResource("1_vrnmd")]
 
 [node name="Sprite2D" parent="." index="0"]
 texture = ExtResource("2_7ruy6")

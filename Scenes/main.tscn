@@ -1,12 +1,31 @@
-[gd_scene load_steps=3 format=3 uid="uid://c2mb8bwq310ye"]
+[gd_scene load_steps=6 format=3 uid="uid://c2mb8bwq310ye"]
 
-[ext_resource type="Script" path="res://Scenes/main.gd" id="1_ugcue"]
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_ugcue"]
+[ext_resource type="PackedScene" uid="uid://bt0q67f4q6wey" path="res://Scenes/board.tscn" id="2_lt1bs"]
 [ext_resource type="PackedScene" uid="uid://d0auuuiauyic2" path="res://Scenes/Tiles/Buildings/trench.tscn" id="2_s0e5i"]
+[ext_resource type="PackedScene" uid="uid://r8qbclriggi0" path="res://Scenes/Tiles/Buildings/bunker.tscn" id="3_fpic4"]
+[ext_resource type="Script" path="res://Scripts/camera.gd" id="5_cbf6y"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_ugcue")
 
-[node name="Tile" parent="." instance=ExtResource("2_s0e5i")]
+[node name="Board" parent="." instance=ExtResource("2_lt1bs")]
 
-[node name="Tile2" parent="." instance=ExtResource("2_s0e5i")]
-position = Vector2(8, 0)
+[node name="Tile" parent="Board" instance=ExtResource("2_s0e5i")]
+position = Vector2(512, 320)
+
+[node name="Tile2" parent="Board" instance=ExtResource("2_s0e5i")]
+position = Vector2(512, 256)
+
+[node name="Tile3" parent="Board" instance=ExtResource("2_s0e5i")]
+position = Vector2(512, 192)
+
+[node name="Tile4" parent="Board" instance=ExtResource("2_s0e5i")]
+position = Vector2(512, 128)
+
+[node name="Bunker" parent="Board" instance=ExtResource("3_fpic4")]
+position = Vector2(512, 64)
+
+[node name="Camera" type="Camera2D" parent="."]
+anchor_mode = 0
+script = ExtResource("5_cbf6y")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://r8qbclriggi0"]
+
+[ext_resource type="PackedScene" uid="uid://bhul8hblhg4op" path="res://Scenes/Tiles/tile.tscn" id="1_58ooq"]
+[ext_resource type="Texture2D" uid="uid://cyqt5yquhlckq" path="res://Sprites/Bunker Transparent.png" id="2_csqqb"]
+
+[node name="Bunker" instance=ExtResource("1_58ooq")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_csqqb")
