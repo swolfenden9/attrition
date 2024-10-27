@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyqt5yquhlckq"
-path="res://.godot/imported/Bunker Transparent.png-a352c432430c336fe8c8f0bdeeb0c5f7.ctex"
+path="res://.godot/imported/Bunker.png-01ae30258a6fb35557b21a1f375d7ea9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Bunker Transparent.png"
-dest_files=["res://.godot/imported/Bunker Transparent.png-a352c432430c336fe8c8f0bdeeb0c5f7.ctex"]
+source_file="res://Sprites/Bunker.png"
+dest_files=["res://.godot/imported/Bunker.png-01ae30258a6fb35557b21a1f375d7ea9.ctex"]
 
 [params]
 
